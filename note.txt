@@ -1,0 +1,13 @@
+Bước 1: cài đặt tài khoản: chỉ cài đặt 1 lần duy nhất. 
+git config --global user.name "your name"
+git config --global user.email "your mail"
+
+Kiểm tra sau khi cài đặt:
+git config --global user.name
+git config --global user.email
+
+Ở Vai trò người khởi tạo dự án.
+1. Tạo remote repository.
+2. Tạo local repository
+    khởi tạo repo: git init
+    Kết nối remote repo với local repo: git remote add origin 'url remote repo'
