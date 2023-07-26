@@ -16,3 +16,27 @@ git config --global user.email
     git add "tên file" hoặc git add . (chọn tất cả các file thay đổi)
     git commit -m "message"
     git push (-u origin - khi lần đầu push lên 1 nhánh) "tên nhánh"
+
+Ở vai trò người tham gia, phát triển dự án:
+1. git clone 'url remote repository' : sao chép toàn bộ dự án từ remote repository về máy.
+2. git pull: kéo code mới nhất từ remote repository trước khi thay đổi code.
+3. thay đổi code thì đẩy code lên như ở bước 3 trong vai trò người khởi tạo dự án.
+
+branch:
+1. Tạo branch
+git branch "ten branch"
+
+2. chuyển qua branch vừa tạo
+git checkout "ten branch"
+
+3. tạo và chuyển branch 
+git checkout -b "ten branch"
+
+4. gộp code vào branch chính. đứng tại branch chính hoặc sử dụng pull request trên github
+git merge "tên branch cần merge"
+
+tình huống tạo ra xung đột code.
+    1. vào branch header sửa 1 dòng bất kì
+    2. megre header vào master
+    3. vào branch footer sửa dòng mà bạn vừa sửa trên header 
+    4. marge footer vào master
